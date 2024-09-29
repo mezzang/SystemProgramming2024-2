@@ -12,9 +12,7 @@ struct utmp *utmp_next();
 
 int main() {
     struct utmp *utbufp;; // utmp 구조체 레코드
-                     // 파일 디스크립터
-  // 레코드 크기
-
+                   
     // utmp 파일 열기
     if ((utmp_open( UTMP_FILE )) == -1) {
         perror(UTMP_FILE); // 오류 메시지 출력
